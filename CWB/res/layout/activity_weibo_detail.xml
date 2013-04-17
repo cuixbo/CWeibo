@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fcfcfc" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_weibo_detail_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                
+                android:src="@drawable/pic_bg_06"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tv_weibo_detail_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="微博用户名"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_weibo_detail_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="微博内容"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_weibo_detail_created_at"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                android:text="n分钟前"
+                android:textSize="10sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_weibo_detail_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="来自**客户端"
+                android:textSize="10sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_weibo_detail_reposts_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="转发(n)"
+                android:textSize="10sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_weibo_detail_comments_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="评论(n))"
+                android:textSize="10sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </LinearLayout> -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:divider="@color/lightgray"
+        android:dividerHeight="0.75dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:stackFromBottom="false"
+        android:textColor="#333333"
+        android:transcriptMode="disabled" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnReply"
+            android:layout_width="fill_parent"
+            android:text="reply"
+            android:visibility="gone"
+            android:layout_height="48dp" />
+        <Button
+            android:id="@+id/btnRepost"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:text="repost"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#eeeeee"
+        android:text="234234"
+        android:textColor="#333333"
+        android:visibility="gone" />
+
+</LinearLayout>

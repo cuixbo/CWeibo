@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/tv_comment_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pic_bg_02"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_user"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="微博用户名"
+            android:textColor="#333333"
+            android:layout_gravity="center_vertical"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="n分钟前"
+             android:textSize="9sp" 
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="38dp"
+        android:text="微博内容"
+         android:textSize="12sp" 
+        android:textColor="#666666" />
+
+</LinearLayout>
