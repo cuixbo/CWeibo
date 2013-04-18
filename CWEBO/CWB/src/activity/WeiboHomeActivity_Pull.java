@@ -13,6 +13,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.util.EntityUtils;
 
+import util.AsyncBitmapLoader;
 import util.CommonUtil;
 import util.DensityUtil;
 import util.ImageLoadUtil;
@@ -320,8 +321,8 @@ public class WeiboHomeActivity_Pull extends Activity {
 			holder.comments_count.setText("ÆÀÂÛ(" + statusBean.comments_count + ")");
 
 			holder.ivProfileImage.setTag(statusBean.userBean.profile_image_url);
-			ImageLoadUtil.updateImageView(holder.ivProfileImage, statusBean.userBean.profile_image_url, null);
-			
+			//ImageLoadUtil.updateImageView(holder.ivProfileImage, statusBean.userBean.profile_image_url, null);
+			AsyncBitmapLoader.loadBitmap(holder.ivProfileImage, statusBean.userBean.profile_image_url);
 			
 			
 			// Bitmap bm = loader.loadImage(weiboBean.user.profile_image_url, callback);
@@ -334,7 +335,7 @@ public class WeiboHomeActivity_Pull extends Activity {
 			// }
 			if(statusBean.thumbnail_pic!=null){
 				holder.ivImage.setVisibility(View.VISIBLE);
-				ImageLoadUtil.updateImageView(holder.ivImage, statusBean.thumbnail_pic, null);
+				//ImageLoadUtil.updateImageView(holder.ivImage, statusBean.thumbnail_pic, null);
 			}else {
 				holder.ivImage.setVisibility(View.GONE);
 			}
